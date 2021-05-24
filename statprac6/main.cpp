@@ -51,8 +51,8 @@ void res(int task) {
         double sigma2 = (sx2 / n) - pow(avg_x, 2);
         double sigma = sqrt(sigma2);
 
-        // Значение из таблицы
-        float t = 135.6;    //todo: find out which t2 should be here
+        // Значение из таблицы (взял 120, как близкое к 100)
+        float t = 2.358;
 
         double res1 = avg_x - (t * sigma) / sqrt(n);
         double res2 = avg_x + (t * sigma) / sqrt(n);
